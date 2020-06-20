@@ -1,4 +1,4 @@
-const baseUrl = 'https://api2.stutern.com/api/'
+const baseUrl = "https://api2.stutern.com/api/";
 // const baseUrl = "https://stutern-api.herokuapp.com/api/";
 export const allUsers = `${baseUrl}users`;
 export const allSets = `${baseUrl}sets`;

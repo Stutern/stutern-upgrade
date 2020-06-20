@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.0232a1e8cbf279b462ecf3e764f242d4.js"
+  "precache-manifest.5456d673aa259893bf8477e0c7b2d130.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "stutern"});
