@@ -105,7 +105,9 @@ export default {
   methods: {
     // this goes to a google form "hire now"
     hireNow() {
-      window.open("https://forms.gle/7UaKupXe2vDBUCVP6", "_blank");
+      (this.activeUser.jobTitle === "UI/UX Design") ? 
+      window.open("https://forms.gle/dY5KivBxVUsFBSks7", "_blank") : 
+      window.open("https://forms.gle/6AvT3DzNwPhkw1qE6", "_blank")
     },
     hireMe() {
       window.open(this.activeUser.userCV, "_blank");

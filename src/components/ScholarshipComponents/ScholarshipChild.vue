@@ -268,7 +268,7 @@ export default {
         : [curr];
       return agg;
     }, {});
-    this.numberOfBeneficiaries = filteredStudents.length
+    this.numberOfBeneficiaries = filteredStudents.length;
   }
 };
 </script>

@@ -99,7 +99,7 @@ let getJobTitles = () => {
   return axios({
     method: "get",
     url: urls.tracks
-  })
+  });
 };
 
 export default {
