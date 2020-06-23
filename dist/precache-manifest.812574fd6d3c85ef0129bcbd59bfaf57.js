@@ -8,16 +8,16 @@ self.__precacheManifest = [
     "url": "favicon/android-chrome-512x512.png"
   },
   {
-    "revision": "b3ae15f102f41b343515b40fd3755a15",
-    "url": "favicon/favicon.png"
+    "revision": "c8e8ad9ac58acf253d57abbfb0b1d2c6",
+    "url": "favicon/mstile-150x150.png"
   },
   {
-    "revision": "f4a1775994a893ef7902",
-    "url": "js/chunk-111f3240.bc78504b.js"
+    "revision": "3dd65344808c7ce753b0",
+    "url": "js/chunk-1f5b5a3e.5b63afb9.js"
   },
   {
-    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
-    "url": "favicon/site.webmanifest"
+    "revision": "0384cec0320289df2c57ca00e1900d1c",
+    "url": "favicon/safari-pinned-tab.svg"
   },
   {
     "revision": "082549f8945a5ac064a1",
@@ -28,40 +28,40 @@ self.__precacheManifest = [
     "url": "js/chunk-2d2371bf.19768852.js"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "robots.txt"
+    "revision": "b3ae15f102f41b343515b40fd3755a15",
+    "url": "favicon/favicon.png"
   },
   {
     "revision": "028598bab38dffec3932",
     "url": "js/chunk-3b0ee05a.318eec9a.js"
   },
   {
-    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
-    "url": "favicon/site.txt"
+    "revision": "8175f46d5f5da6dbcad1180a3cd77b42",
+    "url": "favicon/favicon-32x32.png"
   },
   {
     "revision": "27f9f55585c1f4de40ce",
     "url": "js/chunk-4a9531ba.d7f794fa.js"
   },
   {
-    "revision": "0384cec0320289df2c57ca00e1900d1c",
-    "url": "favicon/safari-pinned-tab.svg"
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "robots.txt"
   },
   {
     "revision": "572501bc16a7ce99d79e",
     "url": "js/chunk-4b7e43e0.85326c14.js"
   },
   {
-    "revision": "c8e8ad9ac58acf253d57abbfb0b1d2c6",
-    "url": "favicon/mstile-150x150.png"
+    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
+    "url": "favicon/site.webmanifest"
   },
   {
     "revision": "b30cc6ad72d36e3f4969",
     "url": "js/chunk-50a94f0d.e3173826.js"
   },
   {
-    "revision": "7f2b2f8a4c6863cc7be0a1e4b7963bd9",
-    "url": "favicon/browserconfig.xml"
+    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
+    "url": "favicon/site.txt"
   },
   {
     "revision": "3d2bf835f5d8137aba53",
@@ -168,8 +168,8 @@ self.__precacheManifest = [
     "url": "img/suregifts.72f1defc.svg"
   },
   {
-    "revision": "6a26add97b65e5ba2270",
-    "url": "js/app.aa4141d1.js"
+    "revision": "976ab9e10360caf8f0db",
+    "url": "js/app.b88a670e.js"
   },
   {
     "revision": "1236719d76c297f59e09f72acd8be58d",
@@ -284,12 +284,12 @@ self.__precacheManifest = [
     "url": "img/orezi.459b2f51.png"
   },
   {
-    "revision": "d4df55b78460a37caa60f30d20748696",
+    "revision": "255eebe741d86f149497761e18facb61",
     "url": "index.html"
   },
   {
-    "revision": "8175f46d5f5da6dbcad1180a3cd77b42",
-    "url": "favicon/favicon-32x32.png"
+    "revision": "49f235b3b36d997652e77f05425f6c93",
+    "url": "favicon/favicon-16x16.png"
   },
   {
     "revision": "7f2b2f8a4c6863cc7be0a1e4b7963bd9",
@@ -300,8 +300,8 @@ self.__precacheManifest = [
     "url": "favicon/apple-touch-icon.png"
   },
   {
-    "revision": "49f235b3b36d997652e77f05425f6c93",
-    "url": "favicon/favicon-16x16.png"
+    "revision": "7f2b2f8a4c6863cc7be0a1e4b7963bd9",
+    "url": "favicon/browserconfig.xml"
   },
   {
     "revision": "e66ebb2b065e2f2e1421cbb1d5c1d79f",
@@ -332,11 +332,11 @@ self.__precacheManifest = [
     "url": "css/chunk-296790d0.96726e6f.css"
   },
   {
-    "revision": "f4a1775994a893ef7902",
-    "url": "css/chunk-111f3240.a430a61b.css"
+    "revision": "3dd65344808c7ce753b0",
+    "url": "css/chunk-1f5b5a3e.0afbf294.css"
   },
   {
-    "revision": "6a26add97b65e5ba2270",
+    "revision": "976ab9e10360caf8f0db",
     "url": "css/app.a446b9c6.css"
   }
 ];
