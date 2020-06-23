@@ -4,20 +4,20 @@ self.__precacheManifest = [
     "url": "img/monitor.22e821e1.svg"
   },
   {
-    "revision": "661e27048720bf9eb5a447d994528208",
-    "url": "favicon/android-chrome-512x512.png"
+    "revision": "7f2b2f8a4c6863cc7be0a1e4b7963bd9",
+    "url": "favicon/browserconfig.txt"
   },
   {
-    "revision": "c8e8ad9ac58acf253d57abbfb0b1d2c6",
-    "url": "favicon/mstile-150x150.png"
+    "revision": "b3ae15f102f41b343515b40fd3755a15",
+    "url": "favicon/favicon.png"
   },
   {
-    "revision": "3dd65344808c7ce753b0",
-    "url": "js/chunk-1f5b5a3e.5b63afb9.js"
+    "revision": "cb5302abd77d8f2195ae",
+    "url": "js/chunk-0894313b.86cf4750.js"
   },
   {
-    "revision": "0384cec0320289df2c57ca00e1900d1c",
-    "url": "favicon/safari-pinned-tab.svg"
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "robots.txt"
   },
   {
     "revision": "082549f8945a5ac064a1",
@@ -28,40 +28,40 @@ self.__precacheManifest = [
     "url": "js/chunk-2d2371bf.19768852.js"
   },
   {
-    "revision": "b3ae15f102f41b343515b40fd3755a15",
-    "url": "favicon/favicon.png"
+    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
+    "url": "favicon/site.webmanifest"
   },
   {
     "revision": "028598bab38dffec3932",
     "url": "js/chunk-3b0ee05a.318eec9a.js"
   },
   {
-    "revision": "8175f46d5f5da6dbcad1180a3cd77b42",
-    "url": "favicon/favicon-32x32.png"
+    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
+    "url": "favicon/site.txt"
   },
   {
     "revision": "27f9f55585c1f4de40ce",
     "url": "js/chunk-4a9531ba.d7f794fa.js"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "robots.txt"
+    "revision": "c8e8ad9ac58acf253d57abbfb0b1d2c6",
+    "url": "favicon/mstile-150x150.png"
   },
   {
     "revision": "572501bc16a7ce99d79e",
     "url": "js/chunk-4b7e43e0.85326c14.js"
   },
   {
-    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
-    "url": "favicon/site.webmanifest"
+    "revision": "0384cec0320289df2c57ca00e1900d1c",
+    "url": "favicon/safari-pinned-tab.svg"
   },
   {
     "revision": "b30cc6ad72d36e3f4969",
     "url": "js/chunk-50a94f0d.e3173826.js"
   },
   {
-    "revision": "b9aa277fcfc34c31db6c7a7ea3469b8c",
-    "url": "favicon/site.txt"
+    "revision": "8175f46d5f5da6dbcad1180a3cd77b42",
+    "url": "favicon/favicon-32x32.png"
   },
   {
     "revision": "3d2bf835f5d8137aba53",
@@ -168,8 +168,8 @@ self.__precacheManifest = [
     "url": "img/suregifts.72f1defc.svg"
   },
   {
-    "revision": "976ab9e10360caf8f0db",
-    "url": "js/app.b88a670e.js"
+    "revision": "06b51cd25b7546ee8c72",
+    "url": "js/app.e8268198.js"
   },
   {
     "revision": "1236719d76c297f59e09f72acd8be58d",
@@ -284,7 +284,7 @@ self.__precacheManifest = [
     "url": "img/orezi.459b2f51.png"
   },
   {
-    "revision": "255eebe741d86f149497761e18facb61",
+    "revision": "62ca9ad40a0b8a90dcfd18dfc5625ad4",
     "url": "index.html"
   },
   {
@@ -293,19 +293,23 @@ self.__precacheManifest = [
   },
   {
     "revision": "7f2b2f8a4c6863cc7be0a1e4b7963bd9",
-    "url": "favicon/browserconfig.txt"
-  },
-  {
-    "revision": "b6f037012bdf509917f162507c3f4d93",
-    "url": "favicon/apple-touch-icon.png"
-  },
-  {
-    "revision": "7f2b2f8a4c6863cc7be0a1e4b7963bd9",
     "url": "favicon/browserconfig.xml"
+  },
+  {
+    "revision": "028598bab38dffec3932",
+    "url": "css/chunk-3b0ee05a.263fda4a.css"
   },
   {
     "revision": "e66ebb2b065e2f2e1421cbb1d5c1d79f",
     "url": "favicon/android-chrome-192x192.png"
+  },
+  {
+    "revision": "661e27048720bf9eb5a447d994528208",
+    "url": "favicon/android-chrome-512x512.png"
+  },
+  {
+    "revision": "b6f037012bdf509917f162507c3f4d93",
+    "url": "favicon/apple-touch-icon.png"
   },
   {
     "revision": "3d2bf835f5d8137aba53",
@@ -324,19 +328,15 @@ self.__precacheManifest = [
     "url": "css/chunk-4a9531ba.bfe7e580.css"
   },
   {
-    "revision": "028598bab38dffec3932",
-    "url": "css/chunk-3b0ee05a.263fda4a.css"
-  },
-  {
     "revision": "082549f8945a5ac064a1",
     "url": "css/chunk-296790d0.96726e6f.css"
   },
   {
-    "revision": "3dd65344808c7ce753b0",
-    "url": "css/chunk-1f5b5a3e.0afbf294.css"
+    "revision": "cb5302abd77d8f2195ae",
+    "url": "css/chunk-0894313b.7f18ec5a.css"
   },
   {
-    "revision": "976ab9e10360caf8f0db",
+    "revision": "06b51cd25b7546ee8c72",
     "url": "css/app.a446b9c6.css"
   }
 ];
