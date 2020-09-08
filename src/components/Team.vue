@@ -1,43 +1,36 @@
 <template>
-    <div class="scholarships-wrap">
-        <b-row class="top-text">
-            <h3 class="top-text-heading">
-                Team
-            </h3>
-            <p class="sub-text">
-                Instructors and mentors for the Stutern Graduate Accelerator are experts and leaders in their respective fields working with leading companies around the world.
-            </p>
+  <div class="scholarships-wrap">
+    <b-row class="top-text">
+      <h3 class="top-text-heading">Team</h3>
+      <p
+        class="sub-text"
+      >Instructors and mentors for the Stutern Graduate Accelerator are experts and leaders in their respective fields working with leading companies around the world.</p>
+    </b-row>
+
+    <b-row class="sets">
+      <b-col sm="12">
+        <p class="set">Instructors and mentors</p>
+      </b-col>
+      <b-col sm="12" class="content-holder">
+        <b-row>
+          <b-col sm="3" v-for="(instructor, i) in instructors" :key="i">
+            <div class="card-wrap">
+              <div class="card-inner-wrapper" style="width: 100%; white-space: initial">
+                <div class="card">
+                  <img class="imgg" :src="require(`../assets/Instructors/${instructor.photo}`)" alt />
+                  <div class="user-details">
+                    <p class="name">{{instructor.name}}</p>
+                    <p class="job-title">{{instructor.title}}</p>
+                    <p class="company-name">{{instructor.company}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </b-col>
         </b-row>
-        
-        <b-row class="sets">    
-            <b-col sm="12">
-                <p class="set">
-                    Instructors and mentors
-                </p>
-            </b-col>
-            <b-col sm="12" class="content-holder">
-                <b-row>
-                    <b-col sm="3" v-for="(instructor, i) in instructors" :key="i">
-                        <div class="card-wrap">
-                            <div class="card-inner-wrapper" style="width: 100%; white-space: initial">
-                                <div class="card" >
-                                    <img class="imgg" :src="require(`../assets/Instructors/${instructor.photo}`)" alt="">
-                                    <div class="user-details">
-                                        <p class="name">
-                                        {{instructor.name}} 
-                                        </p>
-                                        <p class="job-title">
-                                        {{instructor.title}}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </b-col>
-                </b-row>
-            </b-col>
-        </b-row>
-    </div>
+      </b-col>
+    </b-row>
+  </div>
 </template>
 <script>
 import { mapGetters } from "vuex";
@@ -49,64 +42,108 @@ export default {
       v2: "scroll-wrapper2",
       instructors: [
         {
+          name: "Leslie Williams",
+          photo: "Leslie.jpg",
+          title: "Product Designer",
+          company: "TeamApt"
+        },
+        {
+          name: "Raphael Etim",
+          photo: "Raphael.jpg",
+          title: "Software Engineer",
+          company: "Andela"
+        },
+        {
+          name: "Mayowa Adegeye",
+          photo: "Mayowa.jpg",
+          title: "Software Engineer (Android)",
+          company: "Spotify"
+        },
+        {
           name: "Silm Momoh",
           photo: "Slim.jpg",
-          title: "Product Designer"
-        },
-        {
-          name: "Uche Ugo",
-          photo: "Uche.jpg",
-          title: "Product Designer"
-        },
-        {
-          name: "Gabriel Esu",
-          photo: "Gabriel.jpg",
-          title: "Product Designer"
-        },
-        {
-          name: "Kolapo Oni",
-          photo: "Kolapo.png",
-          title: "Creative Developer"
+          title: "Product Designer",
+          company: "Eden Life"
         },
         {
           name: "Joseph Rex",
           photo: "Rex.jpg",
-          title: "Software/Web application developer"
+          title: "Software Engineer",
+          company: "CovertKit"
         },
         {
-          name: "Bomanaziba Josiah",
+          name: "Gabriel Esu",
+          photo: "Gabriel.jpg",
+          title: "Product Designer",
+          company: "PiggyVest"
+        },
+        {
+          name: "Kolapo Oni",
+          photo: "Kolapo.png",
+          title: "Frontend Developer",
+          company: "Sterling Bank"
+        },
+        {
+          name: "Olalekan Sogunle",
+          photo: "Olalekan.jpg",
+          title: "Software Engineer",
+          company: "CareerFoundry"
+        },
+        {
+          name: "Yomi Olaoye",
+          photo: "Yomi.jpg",
+          title: "Frontend Developer",
+          company: "Archimydes"
+        },
+        {
+          name: "Ugo Ifezue",
+          photo: "Ugo.jpg",
+          title: "Product Designer",
+          company: "Bundle Africa"
+        },
+        {
+          name: "Boma Josiah",
           photo: "Boma.png",
-          title: "Product Designer"
+          title: "Product Designer",
+          company: "Tunga"
         },
         {
-          name: "Olukayode",
-          photo: "Kayode.png",
-          title: "Web developer"
+          name: "Uche Ugo",
+          photo: "Uche.jpg",
+          title: "Product Designer",
         },
         {
-          name: "Adebanjo Segun",
-          photo: "Segun.png",
-          title: "Web developer"
+          name: "Silas Onmbayugh",
+          photo: "Silas.jpg",
+          title: "Product Designer",
+          company: "Canva"
         },
         {
           name: "Folorunsho Tosin",
           photo: "Tosin.png",
-          title: "Web Designer"
+          title: "Product Designer",
+          company: "DeepView"
+        },
+        {
+          name: "Olukayode Osisami",
+          photo: "Olukayode.png",
+          title: "Frontend Developer",
+          company: "Crowdyvest"
         }
-      ]
+      ],
     };
   },
   computed: {
     ...mapGetters({
       sets: "getSets",
-      students: "getStudents"
-    })
+      students: "getStudents",
+    }),
   },
   methods: {
     toScholarship() {
       this.$router.push({
         name: "ScholarshipChild",
-        params: { scholarshipName: "girlsInTech" }
+        params: { scholarshipName: "girlsInTech" },
       });
     },
     toLeft(i) {
@@ -123,7 +160,7 @@ export default {
     log() {
       let cont = this.$refs["scroll-wrapper"];
       cont.scrollLeft = cont.scrollWidth - cont.clientWidth;
-    }
+    },
   },
   mounted() {
     this.reducedSets = this.students.reduce((agg, curr) => {
@@ -133,13 +170,13 @@ export default {
       return agg;
     }, {});
     for (let i = 0; i < this.sets.length; i++) {
-      this.reducedSets[this.sets[i].setName].sort(function(a, b) {
+      this.reducedSets[this.sets[i].setName].sort(function (a, b) {
         if (a.userName > b.userName) return 1;
         if (a.userName < b.userName) return -1;
         return 0;
       });
     }
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -295,7 +332,7 @@ export default {
           margin: 0 0 0 0px;
           padding-left: 20px;
           height: 100%;
-          padding-top: 230px;
+          padding-top: 200px;
           background: linear-gradient(
             1.25deg,
             rgba(0, 0, 0, 0.9) 0%,
@@ -303,18 +340,26 @@ export default {
           );
           color: #fff;
           .name {
-            font-family: "Playfair Display", serif;
+            font-family: "Playfair Display", sans-serif;
             font-style: normal;
-            font-weight: normal;
+            font-weight: bolder;
             line-height: 27px;
             font-size: 16px;
             margin: 0;
           }
           .job-title {
             font-style: normal;
-            font-weight: normal;
+            font-weight: lighter;
             line-height: 24px;
             font-size: 14px;
+            margin: 0;
+          }
+          .company-name {
+            font-style: normal;
+            font-weight: bold;
+            line-height: 24px;
+            font-size: 14px; 
+            margin: 0; 
           }
         }
 
