@@ -126,7 +126,7 @@
             <b-col sm="12" class="username">
               <span>{{user.userName}}</span>
 
-              <button class="apply-btn" v-if="user.availability" @click="toSingle(user)">View Profile</button>
+              <button class="apply-btn" v-if="user.availability" @click="toSingle(user)">Request to Hire</button>
               <button class="disabled-btn" disabled v-else>Hired</button>
               
             </b-col>
