@@ -1,53 +1,49 @@
 <template>
-    <div class="singlehire-page-wrap">
-        <b-row class="top-sect">
-            <b-col sm="6" class="top-sect-texts">
-                <p class="name">
-                    {{activeUser.userName}} 
-                    <span class="av" v-if="activeUser.availability">available for hire</span>
-                    <span class="not-av" v-else>not available</span>
-                </p>
-                <p class="title">
-                    {{activeUser.jobTitle}}
-                </p>
-                <p class="self-text">
-                    {{activeUser.userDesc}}
-                </p>
-                <p class="skill-title">
-                    SKILLS & TOOLS
-                </p>
-                
-                
-                <span class="skill" v-for="(skill, i) in skills" :key="'pskill'+i">
-                    <img v-if="skill.type === 'photo' && activeUser.userSkills.includes(skill.name)" style="width: 30px" :src="skill.skillPhoto" alt="">
-                </span>
-                <span v-for="(skill, i) in skills" :key="'tskill'+i">
-                    <span class="skill text-skill" v-if="skill.type === 'text' && activeUser.userSkills.includes(skill.name)">
-                        {{skill.skillText}}
-                    </span>
-                </span>
-                <b-row class="top-btns">
-                    <!-- <a :href='email' v-if="activeUser.availability">
+  <div class="singlehire-page-wrap">
+    <b-row class="top-sect">
+      <b-col sm="6" class="top-sect-texts">
+        <p class="name">
+          {{activeUser.userName}}
+          <span class="av" v-if="activeUser.availability">available for hire</span>
+          <span class="not-av" v-else>not available</span>
+        </p>
+        <p class="title">{{activeUser.jobTitle}}</p>
+        <p class="title">{{activeUser}}</p>
+        <p class="self-text">{{activeUser.userDesc}}</p>
+        <p class="skill-title">SKILLS & TOOLS</p>
+
+        <span class="skill" v-for="(skill, i) in skills" :key="'pskill'+i">
+          <img
+            v-if="skill.type === 'photo' && activeUser.userSkills.includes(skill.name)"
+            style="width: 30px"
+            :src="skill.skillPhoto"
+            alt
+          />
+        </span>
+        <span v-for="(skill, i) in skills" :key="'tskill'+i">
+          <span
+            class="skill text-skill"
+            v-if="skill.type === 'text' && activeUser.userSkills.includes(skill.name)"
+          >{{skill.skillText}}</span>
+        </span>
+        <b-row class="top-btns">
+          <!-- <a :href='email' v-if="activeUser.availability">
                         <button class="apply-btn">
                             Hire me
                         </button>
                     </a>      
                     <button v-else disabled class="apply-btn not-allowed" title="Candidate unavailable">
                       Hire me
-                    </button>     -->
-                    <button class="apply-btn" @click="hireNow()">
-                        Hire me
-                    </button>     
-                    <button class="apply-btn-two" @click="hireMe()">
-                        Portfolio
-                    </button>
-                </b-row>
-            </b-col>
-            <b-col sm="6" class="img-grid-wrap">
-                <img :src="activeUser.userPhoto" class="animated 	slideInRight" alt="">
-            </b-col>
+          </button>-->
+          <button class="apply-btn" @click="hireNow()">Hire me</button>
+          <button class="apply-btn-two" @click="hireMe()">Portfolio</button>
         </b-row>
-        <!-- <b-row class="sect-two">
+      </b-col>
+      <b-col sm="6" class="img-grid-wrap">
+        <img :src="activeUser.userPhoto" class="animated slideInRight" alt />
+      </b-col>
+    </b-row>
+    <!-- <b-row class="sect-two">
             <p class="sect-two-heading">
                 What I have worked on
             </p>
@@ -65,8 +61,8 @@
             <b-col class="card-container" v-if="projects.length === 0" sm="12" xs="12" style="text-align: center">
                 This user has no projects on display
             </b-col>
-        </b-row> -->
-    </div>
+    </b-row>-->
+  </div>
 </template>
 <script>
 import { mapGetters } from "vuex";
@@ -75,18 +71,20 @@ export default {
   data() {
     return {
       projects: [],
-      email: ""
+      email: "",
     };
   },
   computed: {
     ...mapGetters({
       sets: "getSets",
       students: "getStudents",
-      skills: "getSkills"
+      skills: "getSkills",
     }),
     activeUser() {
-      return this.students.find(user => user._id === this.$route.params.userId);
-    }
+      return this.students.find(
+        (user) => user._id === this.$route.params.userId
+      );
+    },
   },
   mounted() {
     // this goes to an email
@@ -95,24 +93,97 @@ export default {
     // }`;
     services
       .getUserProjects(this.$route.params.userId)
-      .then(res => {
+      .then((res) => {
         this.projects = res.data.userProjects;
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   },
   methods: {
     // this goes to a google form "hire now"
     hireNow() {
-      (this.activeUser.jobTitle === "UI/UX Design") ? 
-      window.open("https://forms.gle/dY5KivBxVUsFBSks7", "_blank") : 
-      window.open("https://forms.gle/6AvT3DzNwPhkw1qE6", "_blank")
+      if (this.activeUser.jobTitle === "UI/UX Design") {
+        if (this.activeUser.userSet === "0.7") {
+          window.open("https://forms.gle/NXeDYmXCsR6Csfgw7", "_blank");
+        } else if (this.activeUser.userSet === "0.6") {
+          window.open("https://forms.gle/dY5KivBxVUsFBSks7", "_blank");
+        } else if (this.activeUser.userSet === "0.5") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.4") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.3") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.2") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.1") {
+          window.open("", "_blank");
+        } else {
+          window.open("", "_blank");
+        }
+      } else if (
+        this.activeUser.jobTitle === "Software Development" ||
+        this.activeUser.jobTitle === "Front End Development"
+      ) {
+        if (this.activeUser.userSet === "0.7") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.6") {
+          window.open("https://forms.gle/6AvT3DzNwPhkw1qE6", "_blank");
+        } else if (this.activeUser.userSet === "0.5") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.4") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.3") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.2") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.1") {
+          window.open("", "_blank");
+        } else {
+          window.open("", "_blank");
+        }
+      } else if (this.activeUser.jobTitle === "Data Science") {
+        if (this.activeUser.userSet === "0.7") {
+          window.open("https://forms.gle/PAFv2FpUnm4WtehV8", "_blank");
+        } else if (this.activeUser.userSet === "0.6") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.5") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.4") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.3") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.2") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.1") {
+          window.open("", "_blank");
+        } else {
+          window.open("", "_blank");
+        }
+      } else if (this.activeUser.jobTitle === "Android Development") {
+        if (this.activeUser.userSet === "0.7") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.6") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.5") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.4") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.3") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.2") {
+          window.open("", "_blank");
+        } else if (this.activeUser.userSet === "0.1") {
+          window.open("", "_blank");
+        } else {
+          window.open("", "_blank");
+        }
+      }
     },
     hireMe() {
       window.open(this.activeUser.userCV, "_blank");
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
