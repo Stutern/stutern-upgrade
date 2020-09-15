@@ -9,7 +9,7 @@
         </p>
         <p class="title">{{activeUser.jobTitle}}</p>
         <p class="self-text">{{activeUser.userDesc}}</p>
-        <p class="skill-title">SKILLS & TOOLS</p>
+        <p class="skill-title">SKILLS &amp; TOOLS</p>
 
         <span class="skill" v-for="(skill, i) in skills" :key="'pskill'+i">
           <img
@@ -108,17 +108,15 @@ export default {
         } else if (this.activeUser.userSet === "0.6") {
           window.open("https://forms.gle/dY5KivBxVUsFBSks7", "_blank");
         } else if (this.activeUser.userSet === "0.5") {
-          window.open("", "_blank");
+          window.open("https://forms.gle/eUknaVtLtQ1urBe86", "_blank");
         } else if (this.activeUser.userSet === "0.4") {
-          window.open("", "_blank");
+          window.open("https://forms.gle/ND8c48LnvWvQQvNU6", "_blank");
         } else if (this.activeUser.userSet === "0.3") {
-          window.open("", "_blank");
+          window.open("https://forms.gle/RurmSnKsxVhi9AiX6", "_blank");
         } else if (this.activeUser.userSet === "0.2") {
-          window.open("", "_blank");
+          window.open("https://forms.gle/pfzrrVkuqKh7dQXx7", "_blank");
         } else if (this.activeUser.userSet === "0.1") {
-          window.open("", "_blank");
-        } else {
-          window.open("", "_blank");
+          window.open("https://forms.gle/ohzwXSPSvTYxiuMW6", "_blank");
         }
       } else if (
         this.activeUser.jobTitle === "Software Development" ||
@@ -129,52 +127,20 @@ export default {
         } else if (this.activeUser.userSet === "0.6") {
           window.open("https://forms.gle/6AvT3DzNwPhkw1qE6", "_blank");
         } else if (this.activeUser.userSet === "0.5") {
-          window.open("", "_blank");
+          window.open("https://forms.gle/eUknaVtLtQ1urBe86", "_blank");
         } else if (this.activeUser.userSet === "0.4") {
-          window.open("", "_blank");
+          window.open("https://forms.gle/ND8c48LnvWvQQvNU6", "_blank");
         } else if (this.activeUser.userSet === "0.3") {
-          window.open("", "_blank");
+          window.open("https://forms.gle/RurmSnKsxVhi9AiX6", "_blank");
         } else if (this.activeUser.userSet === "0.2") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.1") {
-          window.open("", "_blank");
-        } else {
-          window.open("", "_blank");
+          window.open("https://forms.gle/pfzrrVkuqKh7dQXx7", "_blank");
         }
       } else if (this.activeUser.jobTitle === "Data Science") {
         if (this.activeUser.userSet === "0.7") {
           window.open("https://forms.gle/PAFv2FpUnm4WtehV8", "_blank");
-        } else if (this.activeUser.userSet === "0.6") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.5") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.4") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.3") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.2") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.1") {
-          window.open("", "_blank");
-        } else {
-          window.open("", "_blank");
         }
       } else if (this.activeUser.jobTitle === "Android Development") {
         if (this.activeUser.userSet === "0.7") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.6") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.5") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.4") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.3") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.2") {
-          window.open("", "_blank");
-        } else if (this.activeUser.userSet === "0.1") {
-          window.open("", "_blank");
-        } else {
           window.open("", "_blank");
         }
       }
