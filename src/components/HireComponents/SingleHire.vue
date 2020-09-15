@@ -8,7 +8,6 @@
           <span class="not-av" v-else>not available</span>
         </p>
         <p class="title">{{activeUser.jobTitle}}</p>
-        <p class="title">{{activeUser}}</p>
         <p class="self-text">{{activeUser.userDesc}}</p>
         <p class="skill-title">SKILLS & TOOLS</p>
 
